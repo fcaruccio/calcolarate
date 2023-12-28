@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calcolo Rata</title>
+	<link rel="stylesheet" href="./css/bootstrap.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="mt-3 col-md-3">
+				<img id="logo" src="./media/logo.webp" />
+			</div>
+		</div>
+	</div>
+
+	<div class="container mt-5">
+		<h2>Calcolatore di Rate</h2>
+		<form id="calculation-form">
+			<div class="row">
+				<div class="mb-3 col-md-4">
+					<label for="total-cost" class="form-label">Costo totale pratica (€):</label>
+					<input type="number" class="form-control" id="total-cost" name="total-cost" required>
+				</div>
+
+				<div class="mb-3 col-md-4">
+					<label for="advance-payment" class="form-label">Anticipo (€):</label>
+					<input type="number" class="form-control" id="advance-payment" name="advance-payment" required>
+				</div>
+				
+				<div class="mb-3 col-md-4">
+					<label for="installments-number" class="form-label">Numero rate:</label>
+					<input type="number" class="form-control" id="installments-number" name="installments-number"
+						required>
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary">Calcola</button>
+		</form>
+
+		<div id="results" class="mt-4">
+			<p>Importo per rata: <span id="installment-amount"></span> €</p>
+		</div>
+	</div>
+
+	<script src="./js/jquery.js"></script>
+	<script src="./js/bootstrapbundle.js"></script>
+	<script src="./js/chart.js"></script>
+	<script src="scripts.js"></script>
+</body>
+
+</html>
